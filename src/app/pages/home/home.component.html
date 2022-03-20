@@ -1,0 +1,58 @@
+<div class="banner">
+    <div class="contain">
+    <h1>EAT WHAT MAKES YOU HAPPY..</h1>
+    <a routerLink="/menu">You Can Order Now...</a>
+    </div>
+</div>
+
+
+
+<!-- steps -->
+<div class="container mt-5 mb-5">
+    <h1 class="text-center steps">Steps How to Buy Your Fav Food ...   </h1>
+  <div class="row mt-5">
+
+    <!-- section 1 -->
+    <div class="col-lg-4 mt-2">
+        <div class="section">
+        <h1>1</h1>
+        <p>Enter Menu Page Then  Select Food</p>
+        </div>
+    </div> <!--end of section 1-->
+
+    <!-- section 2 -->
+    <div class="col-lg-4 mt-2">
+        <div class="section">
+        <h1>2</h1>
+        <p>Fill The Details</p>
+        </div>
+    </div> <!--end of section 2-->
+
+
+     <!-- section 3 -->
+    <div class="col-lg-4 mt-2">
+        <div class="section">
+        <h1>3</h1>
+        <p>Your Order Deliver in minutes</p>
+        </div>
+    </div> <!--end of section 3-->
+  </div>
+</div>
+
+
+<!-- orderDetails this container used to print all orders by using *ngfor -->
+<div class="container mt-4 mb-5">
+    <h1 class="text-center steps mb-5 mt-1">Types Of Food We Have ...   </h1>
+    <div class="row">
+        <div class="col-lg-3" *ngFor="let order of orderData">
+            <div class="order">
+                <img src="{{order.order_img}}">
+                <h1>{{order.order_name}}</h1>
+                <p> {{order.order_price | currency:'EGP'}}</p>
+            </div>
+        </div>
+    </div>
+
+
+    <a class="seemorebtnAslink" routerLink="/menu">See More</a>
+</div>

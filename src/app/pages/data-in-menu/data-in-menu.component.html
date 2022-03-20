@@ -1,0 +1,25 @@
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-lg-6" *ngIf="menuData">
+            <img src="{{menuData.order_img}}" width="100%" >
+            <h1 class="mt-3">{{menuData.order_name}}</h1>
+            <p>{{menuData. order_price | currency:'EGP'}}</p>
+        </div>
+
+
+        <div class="col-lg-6">
+            <h1>Enter Your Data</h1>
+            <form class="mt-5">
+                <input type="text" placeholder="Enter Your Name" class="form-control">
+                <input type="number" placeholder="Enter Your Phone" class="form-control">
+                <input type="text" placeholder="Enter Your Address" class="form-control">
+                
+                <a routerLink="/menu" class="btn btn-secondary mt-3">Back</a>
+                <button class="btn btn-success mt-3"> Send Data</button>
+            </form>
+     
+        </div>
+
+    </div>
+
+</div>

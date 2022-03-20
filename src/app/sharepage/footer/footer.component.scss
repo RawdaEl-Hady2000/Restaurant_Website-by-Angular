@@ -1,0 +1,38 @@
+.footer{
+    background-color: black;
+    // color: lightslategray;
+    font-style: italic;
+    padding: 20px 10px; 
+    overflow: hidden;
+    bottom: 0;
+    height: 60px;
+    margin-top: 10px;
+    // position:fixed;
+    // position:sticky;
+    // top:100%;
+    // bottom: 0;
+    position: relative;
+}
+
+h1{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p{
+    color: white;
+    font-size: 14px;
+}
+a{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 0px 5px;
+}
+a:hover{
+    color: coral;
+}
+i{
+    padding: 0px 6px;
+}

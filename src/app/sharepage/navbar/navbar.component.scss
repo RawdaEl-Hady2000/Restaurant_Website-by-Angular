@@ -1,0 +1,16 @@
+.navbar-dark .navbar-nav .nav-link{
+   color:lightslategray;
+}
+
+.navbar-dark .navbar-nav .nav-link.active-link{
+    font-weight: bold;
+    color: lightsalmon;
+    text-decoration: underline;
+}
+.navbar-brand{
+    color: lightsalmon;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 25px;
+}
+
